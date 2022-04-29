@@ -1,0 +1,13 @@
+server:
+  port: 9001
+spring:
+  applation:
+    name: sc-eureka-server
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    server-url:
+      defaultZone: http://localhost:9001/eureka/
+    register-with-eureka: false
+    fetch-register: false
